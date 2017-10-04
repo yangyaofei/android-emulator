@@ -17,7 +17,7 @@ sleep 1
 echo -e "\n------------------ VNC environment started ------------------"
 echo -e "\nVNCSERVER started on DISPLAY= $DISPLAY \n\t=> connect via VNC viewer with $VNC_IP:$VNC_PORT"
 echo -e "\nnoVNC HTML client started:\n\t=> connect via http://$VNC_IP:$NO_VNC_PORT/vnc_auto.html?password=..."
-
+/root/android-sdk-linux/tools/emulator -avd android-5.0.1 -sdcard ~/sdcard.img > /root/android.log
 for i in "$@"
 do
 case $i in
