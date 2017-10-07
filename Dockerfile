@@ -70,7 +70,7 @@ RUN set -x \
 
 ENV ANDROID_HOME /root/android-sdk-linux
 ENV PATH $PATH:${ANDROID_HOME}/tools:$ANDROID_HOME/platform-tools
-
+EXPOSE 5555
 ADD scripts /root/scripts
 RUN chmod a+x /root/scripts/*.sh
 CMD ["/root/scripts/main.sh"]
